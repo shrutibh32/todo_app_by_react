@@ -1,7 +1,9 @@
-Todo App
+Todo App:
+
 A simple and clean Todo application built using React JS to manage your daily tasks.
 
-🚀 Features
+🚀 Features:
+
 🧩 Component-Based Architecture: The app is divided into reusable components for better organization and scalability.
 
 🧠 State Management: Used React's useState and useReducer hooks to manage dynamic data and application state.
@@ -12,7 +14,8 @@ A simple and clean Todo application built using React JS to manage your daily ta
 
 🖊️ Forms Handling: Created forms with proper onSubmit handling and used event.preventDefault() to stop unwanted page reloads.
 
-📚 What I Learned
+📚 What I Learned:
+
 While building this project, I learned:
 
 Creating and organizing React Components (TodoItem, TodoList, AddTodoForm, etc.)
@@ -27,7 +30,8 @@ Adding and customizing icons using React Icons
 
 Creating a smooth user experience with minimal and effective UI interactions
 
-🛠️ Technologies Used
+🛠️ Technologies Used:
+
 React JS
 
 JavaScript (ES6+)
