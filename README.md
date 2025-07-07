@@ -1,12 +1,41 @@
-# React + Vite
+Todo App:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean Todo application built using React JS to manage your daily tasks.
 
-Currently, two official plugins are available:
+🚀 Features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🧩 Component-Based Architecture: The app is divided into reusable components for better organization and scalability.
 
-## Expanding the ESLint configuration
+🧠 State Management: Used React's useState and useReducer hooks to manage dynamic data and application state.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⚡ Event Handling: Implemented onClick, onChange, onSubmit, and onKeyDown events to interact with user inputs and actions.
+
+📦 React Icons: Added visual feedback using react-icons for delete buttons, checkmarks, etc.
+
+🖊️ Forms Handling: Created forms with proper onSubmit handling and used event.preventDefault() to stop unwanted page reloads.
+
+📚 What I Learned:
+
+While building this project, I learned:
+
+Creating and organizing React Components (TodoItem, TodoList, AddTodoForm, etc.)
+
+Managing state using useState and useReducer
+
+Event handling in forms and buttons (onClick, onSubmit, onChange)
+
+Using event.preventDefault() to control form submission
+
+Adding and customizing icons using React Icons
+
+Creating a smooth user experience with minimal and effective UI interactions
+
+🛠️ Technologies Used:
+
+React JS
+
+JavaScript (ES6+)
+
+HTML & CSS
+
+React Icons
