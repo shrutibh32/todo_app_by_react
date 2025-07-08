@@ -12,7 +12,11 @@ export default function App() {
   //     completed: false,
   //   },
   // ];
-
+useEffect(() => {
+  if (Notification.permission !== "granted") {
+    Notification.requestPermission();
+  }
+}, []);
   const [todoItems, setTodoItems] = useState([])
   const [isFirstLoad, setIsFirstLoad] = useState(true);
 
@@ -52,30 +56,18 @@ let handleToggleComplete = (todoName) => {
 
 
 
-useEffect(()=>{
-  const now=new Date;
-  const todayDate=now.toISOString().split('T')[0];
-  const tasksDueToday=todoItems.filter((item)=>item.dueDate===todayDate && !item.completed);
-
-  if(tasksDueToday.length===0) return;
-
-
-  const reminderTime=new Date();
-  console.log(reminderTime)
-  reminderTime.setHours(21,0,0,0);
-
-  const delay=reminderTime.getTime()-now.getTime();
-console.log(delay)
-  if(delay>0){
-    const timeoutId=setTimeout(()=>{
-      tasksDueToday.forEach((task)=>{
-        alert(`Reminder you havent completed ${task.name}`);
+useEffect(() => {
+  const timeoutId = setTimeout(() => {
+    if (Notification.permission === "granted") {
+      new Notification("⏰ Test Notification", {
+        body: `This is just a test notification`,
       });
-    },delay);
-    return ()=>clearTimeout(timeoutId);
-  }
+    }
+  }, 7200000); // after 5 seconds
 
-},[todoItems]);
+  return () => clearTimeout(timeoutId);
+}, []);
+
 
 
 
